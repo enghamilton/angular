@@ -1,0 +1,82 @@
+<!doctype html>
+<html ng-app="myApp">
+	<head>
+		<title>My AngularJS App</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+	</head>
+	<body>
+    <div class="file-upload" ng-app="myApp" ng-controller="myCtrl">
+        <input type="text" ng-model="name">
+        <input type="file" file-model="myFile"/>
+        <button ng-click="uploadFile()">upload me</button>
+		<div id="gallery">
+		</div>
+    </div>
+	<script type="text/javascript">
+	/*
+	stackoverflow.com/questions/33534497/file-upload-using-angularjs-with-php-server-script
+	*/
+	var myApp = angular.module('myApp', []);
+
+	myApp.directive('fileModel', ['$parse', function ($parse) {
+		return {
+		restrict: 'A',
+		link: function(scope, element, attrs) {
+			var model = $parse(attrs.fileModel);
+			var modelSetter = model.assign;
+
+			element.bind('change', function(){
+				scope.$apply(function(){
+					modelSetter(scope, element[0].files[0]);
+				});
+			});
+		}
+	   };
+	}]);
+
+	// We can write our own fileUpload service to reuse it in the controller
+	myApp.service('fileUpload', ['$http', function ($http) {
+		this.uploadFileToUrl = function(file, uploadUrl, name){
+			 var fd = new FormData();
+			 fd.append('file', file);
+			 fd.append('name', name);
+			 $http.post(uploadUrl, fd, {
+				 transformRequest: angular.identity,
+				 headers: {'Content-Type': undefined,'Process-Data': false}
+			 })
+			 .success(function(){
+				console.log("Success");
+				alert('Image uploaded !');
+			 })
+			 .error(function(){
+				console.log("not Success");
+				alert('something went wrong');
+			 });
+		 }
+	 }]);
+
+	 myApp.controller('myCtrl', ['$scope', 'fileUpload', function($scope, fileUpload){
+
+	   $scope.uploadFile = function(){
+			var file = $scope.myFile;
+			console.log('file is ' );
+			console.dir(file);
+
+			var uploadUrl = "save_form.php";
+			var text = $scope.name;
+			fileUpload.uploadFileToUrl(file, uploadUrl, text);
+			
+			elem = document.createElement("IMG");
+			elem.src = 'uploads/'+file.name;
+			elem.setAttribute("height", "170");
+			elem.setAttribute("width", "170");
+			elem.setAttribute("alt", file.name);
+			//elem.setAttribute('src', 'uploads/'+file.name);
+			document.getElementById("gallery").appendChild(elem);
+			alert(file.name);
+	   };
+
+	}]);
+	</script>
+</body>
+</html>
