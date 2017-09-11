@@ -1,0 +1,2053 @@
+<!DOCTYPE html>
+<!--
+
+	Design by Free CSS Templates
+	http://www.freecsstemplates.org
+	Released for free under a Creative Commons Attribution License
+
+	Name       : Serious Face - adapted
+	Version    : 1.0
+	Released   : 20130222
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta name="keywords" content="" />
+        <meta name="description" content="" />
+        <!--  <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />  -->
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<!--  http://www.w3c.br/cursos/html5/conteudo/capitulo3.html  -->
+		<title>feibook</title>
+        <link href="http://fonts.googleapis.com/css?family=Oxygen:400,700,300" rel="stylesheet" type="text/css" />
+        <link href="http://fonts.googleapis.com/css?family=Bitter" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" type="text/css" href="css/profile/style.css" />
+		<!-- <link rel="stylesheet" type="text/css" href="css/profile/profile.css" /> -->
+		<link rel="stylesheet" type="text/css" href="highslide/highslide.css" />
+		<!-- Font Awesome edit icon-->
+		<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+		<!-- highslide slide gallery -->
+		<script type="text/javascript" src="highslide/highslide-full.js"></script>		
+		<!--
+		<script src="js/modernizr.custom.js"></script>
+		-->
+		<script type="text/javascript" src="http://www.parsecdn.com/js/parse-1.2.19.min.js"></script>
+		<!-- jquery Upload multiple images -->
+		<script type="text/javascript" src="js/upload/jquery.js"></script>
+		<!--
+		<script type="text/javascript" src="js/elastic/jquery-1.6.2.min.js"></script>
+		<script type="text/javascript" src="js/elastic/jquery.elastic.source.js"></script>
+		-->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+		
+		<style>
+		
+		</style>
+		<!-- Parse javascript
+		<script type="text/javascript">   	
+		function parseFile() {	
+			Parse.initialize("37WGaCBDsU9jc3nRLA4Dv7W1McU0Ck2eOoOhlWMm", "gIdQSRphht1P4pfM97qQ2jJIl8Gm2ve0XLJJh9Ik");
+			var name1 = document.getElementById("profilePhotoFileUpload").value;	
+	
+			var TestObject = Parse.Object.extend("TestObject");
+			var testObject = new TestObject();
+			testObject.save({foo: name1}).then(function(object) {
+			});		
+			window.alert(name1);
+		}	
+		</script>
+		-->
+		
+		<!--
+		<style>
+		.tabrow {		    
+			text-align: center;
+		    list-style: none;
+		    margin: 5px 0 0px;
+		    padding: 0;
+		    line-height: 24px;
+		    height: 26px;
+		    overflow: hidden;
+		    font-size: 12px;
+		    font-family: verdana;
+		    position: relative;
+		}
+		
+		.tabrow_profile {		    
+			text-align: center;
+		    list-style: none;
+		    margin: 5px 0 20px;			
+		    padding: 0;
+		    line-height: 24px;
+		    height: 26px;
+		    overflow: hidden;
+		    font-size: 12px;
+		    font-family: verdana;
+		    position: relative;
+		}
+		
+		.tabrow li {
+		    border: 1px solid #AAA;
+		    background: #D1D1D1;
+		    background: -o-linear-gradient(top, #ECECEC 50%, #D1D1D1 100%);
+		    background: -ms-linear-gradient(top, #ECECEC 50%, #D1D1D1 100%);
+		    background: -moz-linear-gradient(top, #ECECEC 50%, #D1D1D1 100%);
+		    background: -webkit-linear-gradient(top, #ECECEC 50%, #D1D1D1 100%);
+		    background: linear-gradient(top, #ECECEC 50%, #D1D1D1 100%);
+		    display: inline-block;
+		    position: relative;
+		    z-index: 0;
+		    border-top-left-radius: 6px;
+		    border-top-right-radius: 6px;
+		    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.4), inset 0 1px 0 #FFF;
+		    text-shadow: 0 1px #FFF;
+		    margin: 0 -5px;
+		    padding: 0 20px;
+		}
+		.tabrow a {
+			  color: #555;
+			  text-decoration: none;
+		}
+		.tabrow li.selected {
+		    background: #FFF;
+		    color: #333;
+		    z-index: 2;
+		    border-bottom-color: #FFF;
+		}
+		.tabrow:before {
+		    position: absolute;
+		    content: " ";
+		    width: 100%;
+		    bottom: 0;
+		    left: 0;
+		    border-bottom: 1px solid #AAA;
+		    z-index: 1;
+		}
+		.tabrow li:before,
+		.tabrow li:after {
+		    border: 1px solid #AAA;
+		    position: absolute;
+		    bottom: -1px;
+		    width: 5px;
+		    height: 5px;
+		    content: " ";
+		}
+		.tabrow li:before {
+		    left: -6px;
+		    border-bottom-right-radius: 6px;
+		    border-width: 0 1px 1px 0;
+		    box-shadow: 2px 2px 0 #D1D1D1;
+		}
+		.tabrow li:after {
+		    right: -6px;
+		    border-bottom-left-radius: 6px;
+		    border-width: 0 0 1px 1px;
+		    box-shadow: -2px 2px 0 #D1D1D1;
+		}
+		.tabrow li.selected:before {
+		    box-shadow: 2px 2px 0 #FFF;
+		}
+		.tabrow li.selected:after {
+		    box-shadow: -2px 2px 0 #FFF;
+		}
+	</style>	
+	-->		
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script>
+		$(function() {
+			$(".tabrow li").click(function(e) {
+				e.preventDefault();
+				$("li").removeClass("selected");
+				$(this).addClass("selected");				
+			});
+		});
+	</script>
+		<style type="text/css">
+		iframe {
+			border: 0;
+			overflow: hidden;
+			margin: 0;
+			height: 60px;
+			width: 450px;
+		}
+
+		#anexos {
+			list-style-image: url(image/file.png);
+		}
+
+		img.remover {
+			cursor: pointer;
+			vertical-align: bottom;
+		}
+		
+		</style>	
+		
+		<script type="text/javascript">
+		$(function($) {
+			// Quando enviado o formulário
+			$("#upload").submit(function() {
+				// Passando por cada anexo
+				$("#anexos").find("li").each(function() {
+					// Recuperando nome do arquivo
+					var arquivo = $(this).attr('lang');
+					// Criando campo oculto com o nome do arquivo
+					$("#upload").prepend('<input type="hidden" name="anexos[]" value="' + arquivo + '" \/>');						
+				}); 
+			});
+		});
+    
+		// Função para remover um anexo
+		function removeAnexo(obj)
+		{
+			// Recuperando nome do arquivo
+			var arquivo = $(obj).parent('li').attr('lang');
+			// Removendo arquivo do servidor
+			$.post("profile.php?id=<?php echo $UserProfilePage->identification;?>", {acao: 'removeAnexo', arquivo: arquivo}, function() {
+				// Removendo elemento da página
+				$(obj).parent('li').remove();
+			});
+		}
+		</script>
+	
+		<script type="text/javascript">
+		hs.graphicsDir = 'highslide/graphics/';
+		hs.align = 'center';
+		hs.transitions = ['expand', 'crossfade'];
+		hs.outlineType = 'rounded-white';
+		hs.fadeInOut = true;
+		hs.dimmingOpacity = 0.75;
+
+		// define the restraining box
+		hs.useBox = true;
+		hs.width = 640;
+		hs.height = 480;
+
+		// Add the controlbar
+		hs.addSlideshow({
+		//slideshowGroup: 'group1',
+		interval: 5000,
+		repeat: false,
+		useControls: true,
+		fixedControls: 'fit',
+			overlayOptions: {
+				opacity: 1,
+				position: 'bottom center',
+				hideOnMouseOut: true
+			}
+		});
+		</script>
+		
+		<script type="text/javascript">
+		/*
+		* Auto Expanding Text Area 
+		* by  Jan Jarfalk (www.unwrongest.com)
+		*/
+		$( function(){
+		$(".input_box").elastic().css("height","30px");
+		$(".input_box").focus(function(){
+			$(this).filter(function(){
+				return $(this).val() == "" || $(this).val() == "So what's on your mind?"
+			}).val("").css("color","#000000");
+		});
+		$(".input_box").blur(function(){
+		$(this).filter(function(){
+		return $(this).val() == ""
+		}).val("So what's on your mind?").css("color","#808080");
+		});
+ 
+		$("#share").click(function(){
+		var a_p = "";
+		var d = new Date();
+		var curr_hour = d.getHours();
+		if (curr_hour < 12){
+		a_p = "am";
+		}else{
+		a_p = "pm";
+		}
+		if (curr_hour == 0){
+		curr_hour = 12;
+		}
+		if (curr_hour > 12){
+		curr_hour = curr_hour - 12;
+		}
+		var curr_min = d.getMinutes();
+		curr_min = curr_min + "";
+		if (curr_min.length == 1){
+		curr_min = "0" + curr_min;
+		}
+		var m_names = new Array("Jan", "Feb", "Mar", 
+		"Apr", "May", "Jun", "Jul", "Aug", "Sep", 
+		"Oct", "Nov", "Dec");
+		var d = new Date();
+		var curr_date = d.getDate();
+		var curr_month = d.getMonth();
+		var curr_year = d.getFullYear();
+		var date = m_names[curr_month] +" "+ curr_date +" "+"at"+" "
+		+ curr_hour + ":" + curr_min + " " + a_p;
+ 
+		$(".loading").show();
+		var status=$(".input_box").val();
+		if(status == "So what's on your mind?"){
+		$(".loading").hide();
+		}else{
+		var DATA = 'status=' + status + '&date=' +date;
+		$.ajax({
+		type: "POST",
+		url: "status_update.php",
+		data: DATA,
+		cache: false,
+		success: function(data){
+		$(data).prependTo(".load_status_out").slideDown("slow");
+		$(".loading").hide();
+		$(".input_box").val("So what's on your mind?").css("color","#808080").css("height","30px");
+		}
+		});
+		}
+		return false;
+		});
+		});
+		</script>
+		<script type="text/javascript">
+		$("a.editInline").css("display","none");
+		$('li').on('mouseover mouseout',function(){
+		$(this).find('.editInline').toggle();
+		//find the closest li and find its children with class editInLine and 
+		//toggle its display using 'toggle()'
+		});
+		</script>
+		
+		<!-- http: //www.w3schools.com/jquery/event_ready.asp  -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+		<script src="js/jquery.fileDownload.js" type="text/javascript"></script>
+		<script src="js/FileSaver.js" type="text/javascript"></script>
+		<script>
+		$(document).ready(function(){
+			//$(".tabrow li").mousedown(function(){
+			//$(".tabrow li").click(function(){
+			$(".tabrow li").click(function(){
+				
+				//alert("!!");
+				
+				/*
+				function tabSwitchFolder(event) {     
+				function tabSwitchFolder(active, number, tab_prefix, content_prefix) {     
+							for (var i=1; i < number+1; i++) {
+							  document.getElementById(content_prefix+i).style.display = 'none';
+							  document.getElementById(tab_prefix+i).className = '';
+							}
+							document.getElementById(content_prefix+active).style.display = 'block';
+							//document.getElementById(tab_prefix+active).className = 'active';
+							alert("!");				
+						}
+				*/
+				
+				
+			});
+			
+			$('.download_label').on('click', function(e) {
+				//var a = document.createElement('a');
+				
+				//if (typeof a.download != "undefined") {alert('has support for <a href download>');} else {alert('NOT has support for <a href download>');	}
+				
+			  // For IE
+			  // https: //jsfiddle.net/MadLittleMods/dywbo5vx/
+			   // For IE
+				if(window.navigator.msSaveOrOpenBlob) {
+					//var s = '<a href="www.something">';
+					var s = $(this).children('a').attr('href');
+					//alert(s+' type: '+s.split('.').pop());
+					//var href = s.match(/href="([^"]*)/)[1];
+					//var blobObject = new Blob(["<p>Hello world!</p>"], {"type" : "text/html"});
+					//window.navigator.msSaveOrOpenBlob(blobObject, 'sample.html');
+					//var typeFile = s.split('.').pop();
+					//var stringFilename = s.split('/');
+					//var blobObject = new Blob([s],"sample."+s.split('.').pop(),{'type':typeFile});
+					//use this linevar blobObject = new Blob([s],stringFilename[(stringFilename.length)-1],{type:'image/jpeg'}, new Date());
+					//var blobObject = new Blob([s],stringFilename[(stringFilename.length)-1],{'type':'image/'+typeFile+';charset=utf-8'}, new Date());
+					//window.navigator.msSaveOrOpenBlob(blobObject, stringFilename[stringFilename.length-1]);
+					//e.preventDefault();
+				}
+				// For browsers that support the `download` attribute
+				else {
+					// You could also create the url with `window.URL.createObjectURL`
+					// var blobObject = new Blob(['<p>Hello world!</p>'], {type : 'text/html'});
+					// this.href = window.URL.createObjectURL(blobObject)
+					this.href = 'data:text/html;charset=utf-8,'
+						+ encodeURIComponent('<p>Hello world!</p>');
+				}
+				/*
+				$.fileDownload('/uploads/900000202/1/ENCEP_2003.jpg'
+				).done(function () { alert('File download a success!'); }).fail(function () { alert('File download failed!'); });
+				return false; this is critical to stop the click event which will trigger a normal file download!
+				*/
+				var s = $(this).children('a').attr('href');				
+				//alert(s.split('.').pop());
+				var mimeArray = ["jpg","jpeg","bmp","gif","doc","docx","xls","xlsx","pdf","mp3"];
+				switch ( s.split('.').pop() ) {
+					case 'jpg':
+						mimeFile = "image/jpeg";
+						break;
+					case 'bmp':
+						mimeFile = "image/bmp";
+						break;
+					case 'png':
+						mimeFile = "image/png";
+						 break;
+					case 'doc':
+						mimeFile = "application/msword";
+						 break;
+					case 'docx':
+						mimeFile = "application/vnd.msword";
+					case 'ppt':
+						mimeFile = "application/powerpoint";
+						 break;
+					case 'pptx':
+						mimeFile = "application/vnd.x-mspowerpoint";
+						 break;
+					case 'xlsx':
+						mimeFile = "application/xls";
+						 break;
+					case 'zip':
+						mimeFile = "application/zip";
+						 break;
+					case 'mp3':
+						mimeFile = "audio/mpeg3";
+						 break;
+					case 'cad':
+						mimeFile = "application/acad";
+						 break;
+					case 'c++':
+						mimeFile = "text/plain";
+						break;
+					case 'cpp':
+						mimeFile = "text/x-c";
+						break;
+					case 'pdf':
+						mimeFile = "application/pdf";
+						 break;
+					case 'txt':
+						mimeFile = "text/plain";
+						 break;
+					default: 
+						mimeFile = "undefined"
+				}
+				//alert(mimeFile);
+				//window.open('uploads/900000202/1/sample_zipfile.rar');
+				//window.open(s);
+				
+			});
+		});
+		</script>
+
+		<script>						
+		
+		function tabSwitchFolder(active, number, tab_prefix, content_prefix) {		
+			//var i;
+			for (var i = 1; i < number + 1; i++) {
+				//alert(i);
+				document.getElementById(content_prefix+i).style.display = 'none';
+				//document.getElementById(tab_prefix+i).className = '';								
+			}
+			
+			//alert('active ['+active+'] last_number ['+number+']');
+			document.getElementById(content_prefix+active).style.display = 'block';
+			//document.getElementById(tab_prefix+active).className = 'active';     ***error*** 2 days deploy !!! losting time !!! solved after // the line
+			//document.getElementById(tab_prefix+active).className = 'selected';   ***error*** 2 days deploy !!! losting time !!! solved after // the line
+		}																  //   *** "selected" is class name for selecting tab menu, see javascript on line 431 in this profile.php  ****
+		</script>
+	
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+					<script type="text/javascript" >
+						// http:/ /www.w3schools.com/jquery/jquery_hide_show.asp
+						// https:/ /learn.jquery.com/using-jquery-core/document-ready/
+						$(document).ready(function(){
+							$(".account").click(function()
+								{
+								var X=$(this).attr('id');
+								
+								if(X==1)
+									{
+										$(".submenu").hide();
+										$(this).attr('id', '0'); 
+									}
+								else
+									{													
+										$(".submenu").show();
+										$(this).attr('id', '1');							
+									}
+
+								});
+								
+								//Mouse click on sub menu
+								$(".submenu").mouseup(function()
+									{
+										return false
+									});
+
+								//Mouse click on my account link
+								$(".account").mouseup(function()
+									{
+										return false
+									});
+
+
+								//Document Click
+								$(document).mouseup(function()
+									{
+										$(".submenu").hide();
+										$(".account").attr('id', '');
+									});
+								$(".folder-next").append('&#187');																			
+								var childId = <?php echo count($EditUserProfile->EditUserClassesPreviousNext()); ?>;			
+								for(var index = 2; index < childId+1; index++){
+								$('#content_'+index).css('display', 'none');
+								}								
+								//$('#tab_6').css('display', 'none');
+								//$('#tab_7').css('display', 'none');
+								//alert($(".tabrow li").length);								
+								//alert( "Index: " + $( "#tab_3" ).index( ) );
+								/*
+								if( $(".tabrow li").length > 5 ){
+									for(var i = 6; i < $(".tabrow li").length + 1; i++){
+									$('#tab_'+i).css('display', 'none');
+									//$('#tab_7').css('display', 'none');
+									}
+								}
+								*/						
+						});
+						
+						/*function functionLocationHref() {
+							location.href = "profile.php?id=<?php //echo $EditUserProfile->identification;?>";
+						}*/
+					</script>
+		<script type="text/javascript">
+		var jQuery_1_10_1 = $.noConflict(true);
+			var editUserClassesFolderCount = jQuery.parseJSON('<?php $EditUserProfile->EditUserClassesFolderCount()?>');
+			var ar = [];
+			for (var i=1; i < editUserClassesFolderCount.length + 1; i++){
+				ar.push(i);
+			}
+			//alert(ar);
+			$.each(ar, function(index,value) { //alert(value); 
+			
+			//} );
+			// http ://hayageek.com/drag-and-drop-file-upload-jquery/
+			var get_folder = "1";
+			function sendFileToServer(formData,status)
+			{
+				//var uploadURL ="http://hayageek.com/examples/jquery/drag-drop-file-upload/upload.php"; //Upload URL
+				var uploadURL ="upload.php";
+				var extraData ={}; //Extra Data.
+				var jqXHR=$.ajax({
+						xhr: function() {
+						var xhrobj = $.ajaxSettings.xhr();
+						//
+						var started_at = new Date();
+						//
+						if (xhrobj.upload) {
+								xhrobj.upload.addEventListener('progress', function(event) {
+									var percent = 0;
+									var position = event.loaded || event.position;
+									var total = event.total;
+									
+									// Time Remaining
+									var seconds_elapsed =   ( new Date().getTime() - started_at.getTime() )/1000;
+									var bytes_per_second =  seconds_elapsed ? position / seconds_elapsed : 0 ;
+									var Kbytes_per_second = bytes_per_second / 1000 ;
+									var remaining_bytes =   total - position;
+									var seconds_remaining = seconds_elapsed ? remaining_bytes / bytes_per_second : 'calculating' ;
+									var seconds_remaining_display = Math.round(seconds_remaining);
+									status.setRemaining(seconds_remaining_display);
+									//
+									
+									if (event.lengthComputable) {
+										//percent = Math.ceil(position / total * 100);
+										percent = Math.round((position / total) * 100);
+									}
+									//Set progress
+									status.setProgress(percent);
+									
+								}, false);
+							}
+						return xhrobj;
+					},
+				url: uploadURL,
+				type: "POST",
+				contentType:false,
+				processData: false,
+					cache: false,
+					data: formData,
+					success: function(data){
+						status.setProgress(100);
+						//status.setRemaining().hide();
+						//$("#status1").append("File upload Done <br>");         
+					}
+				}); 
+				status.setAbort(jqXHR);
+			}
+			 
+			var rowCount=0;
+			function createStatusbar(obj)
+			{
+				 rowCount++;
+				 var row="odd";
+				 
+				 if(rowCount %2 ==0) row ="even";
+				 this.statusbar = $("<div class='statusbar "+row+"'></div>");
+				 this.filename = $("<div class='filename'></div>").appendTo(this.statusbar);
+				 this.size = $("<div class='filesize'></div>").appendTo(this.statusbar);
+				 this.progressBar = $("<div class='progressBar'><div></div></div>").appendTo(this.statusbar);
+				 this.remaining = $("<span class='remaining'><span></span></span>").appendTo(this.statusbar);
+				 this.abort = $("<div class='abort'>Abort</div>").appendTo(this.statusbar);
+				 obj.after(this.statusbar);
+			 
+				this.setFileNameSize = function(name,size)
+				{
+					var sizeStr="";
+					var sizeKB = size/1024;
+					if(parseInt(sizeKB) > 1024)
+					{
+						var sizeMB = sizeKB/1024;
+						sizeStr = sizeMB.toFixed(2)+" MB";
+					}
+					else
+					{
+						sizeStr = sizeKB.toFixed(2)+" KB";
+					}
+			 
+					this.filename.html(name);
+					this.size.html(sizeStr);
+				}
+				this.setProgress = function(progress)
+				{       
+					//var progressBarWidth = progress*this.progressBar.width()/ 100;
+					var progressBarWidth = (progress/100)*this.progressBar.width();
+					//this.progressBar.find('div').animate({ width: progressBarWidth }, 10).html(progress + "% ");
+					this.progressBar.find('div').animate({ width: progressBarWidth }, 10).html(progress + "% ");
+					if(parseInt(progress) >= 100)
+					{
+						this.abort.hide();
+					}
+				}
+				this.setRemaining = function(seconds_remaining)
+				{
+					//this.remaining.html( Math.round(seconds_remaining) );
+					this.remaining.find('span').html( seconds_remaining + " seg");
+					if(seconds_remaining == 0)
+					{
+						this.remaining.find('span').hide();
+					}
+					
+				}
+				this.setAbort = function(jqxhr)
+				{
+					var sb = this.statusbar;
+					this.abort.click(function()
+					{
+						jqxhr.abort();
+						sb.hide();
+					});
+				}
+			}
+			function handleFileUpload(files,obj)
+			{
+			   for (var i = 0; i < files.length; i++) 
+			   {
+					var fd = new FormData();
+					fd.append('file', files[i]);
+					fd.append('folder', value);// http: //stackoverflow.com/questions/11819791/receive-php-parameters-with-jquery-ajax-post
+					// http: //stackoverflow.com/questions/19218031/changing-global-variable-value-inside-function
+			 
+					var status = new createStatusbar(obj); //Using this we can set progress.
+					status.setFileNameSize(files[i].name,files[i].size);
+					sendFileToServer(fd,status);
+			 
+			   }
+			}
+			$(document).ready(function()
+			{
+			
+			var download_button = $(".download_label");
+			download_button.css("left","110px");
+			download_button.css("visibility","hidden");
+			download_button.css("background-color","#64B126");
+			download_button.css("border","1px solid #4E9416");
+			download_button.css("color","white");
+			//share_button.css("display","none");
+			download_button.css("font-size","0.8em");
+			download_button.css("position","absolute");
+			download_button.css("margin-left","760px");
+			//download_button.css("margin-top","-28px");
+			download_button.css("padding","0 3px 0 3px");
+			download_button.css("cursor","pointer");
+			download_button.css("text-shadow","0 0 1px #315D0D");
+			download_button.css("-moz-border-radius","3px");
+			download_button.css("-webkit-border-radius","3px");
+			download_button.css("border-radius","3px");			
+			
+			var share_button = $(".share_label"+value);
+			share_button.css("width","80px");
+			share_button.css("background-color","#64B126");
+			share_button.css("border","1px solid #4E9416");
+			share_button.css("color","white");
+			//share_button.css("display","none");
+			share_button.css("font-size","0.8em");
+			share_button.css("position","absolute");
+			//share_button.css("margin-left","730px");
+			
+			//share_button.css("margin-top","-28px");
+			share_button.css("padding","0 3px 0 3px");
+			share_button.css("cursor","pointer");
+			share_button.css("text-shadow","0 0 1px #315D0D");
+			share_button.css("-moz-border-radius","3px");
+			share_button.css("-webkit-border-radius","3px");
+			share_button.css("border-radius","3px");
+			var share_button_hover = $(".share_label"+value);
+			share_button_hover.hover(function(){$(this).css("border","1px solid #FFFFFF");}, function(){$(this).css("border","1px solid #4E9416");});
+			//share_button_hover.hover(function(){$(".share_label li .share_label"+value).css("visibility","visible");}, function(){$(this).css("visibility","hidden");});
+			
+			var delete_button = $(".delete_label"+value);
+			delete_button.css("width","auto");
+			delete_button.css("background-color","#64B126");
+			delete_button.css("border","1px solid #4E9416");
+			delete_button.css("color","white");
+			//share_button.css("display","none");
+			delete_button.css("font-size","0.8em");
+			delete_button.css("position","absolute");
+			//delete_button.css("margin-left","860px");
+			delete_button.css("margin-left","105px");
+			delete_button.css("vertical-align","center");
+			//delete_button.css("margin-top","-21px");
+			delete_button.css("margin-top","6px");
+			delete_button.css("padding","0 3px 0 3px");
+			delete_button.css("cursor","pointer");
+			delete_button.css("text-shadow","0 0 1px #315D0D");
+			delete_button.css("-moz-border-radius","3px");
+			delete_button.css("-webkit-border-radius","3px");
+			delete_button.css("border-radius","3px");
+			var delete_button_hover = $(".delete_label"+value);
+			delete_button_hover.hover(function(){$(this).css("border","1px solid #FFFFFF");}, function(){$(this).css("border","1px solid #4E9416");});
+			
+			var obj = $("#dragandrophandler"+value);
+			obj.css("border","2px dotted #0B85A1");
+			obj.css("width","99.5% !important");
+			obj.css("color","#92AAB0");
+			obj.css("text-align","center");
+			obj.css("vertical-align","middle");
+			obj.css("padding","10px 0px 20px 0px");
+			obj.css("margin-bottom","10px");
+			obj.css("font-size","100%");
+			
+			var context_menu = $("#contextMenu"+value);
+			context_menu.css("position","absolute");
+			context_menu.css("display","none");
+			context_menu.css("background","#FFFFFF");
+			context_menu.css("border","1px solid #999999");
+			context_menu.css("padding","5px");
+			
+			
+			var context_menu_ul_li = $("#contextMenu"+value+" ul li");
+			context_menu_ul_li.css("list-style","none");
+			context_menu_ul_li.css("border-bottom","1px solid #999999");
+			context_menu_ul_li.css("cursor","pointer");
+			
+			//var share_hover = $(".files li .share_label");
+			var share_hover = $(".files"+value+" li");
+			//share_hover.hover(function(){$(this).css("background-color","rgba(144,144,144,0.1)");},function(){$(this).css("background-color","white");});
+			/*
+			share_hover.hover(
+				function(){$(this).css("background-color","rgba(144,144,144,0.1)");},
+				function(){
+					$(this).css("background-color","white");
+				}
+			);
+			*/
+			//share_hover.find('a').css("padding","7px 0 10px 0");
+			//share_hover.find('.filename').css("border","1px dotted red");
+			share_hover.find('a').css("border","1px dotted red");
+			share_hover.find('a').css("width","650px");
+			//share_hover.find('a').css("width","600px");
+			share_hover.hover(
+				function(){
+					$(this).css("background-color","rgba(144,144,144,0.1)");
+				},
+				function(){
+					if(this.hover_background_color){
+						$(this).css("background-color","rgba(144,144,144,0.1)");
+						this.hover_background_color = null;
+					} else {
+						$(this).css("background-color","white");
+					}
+				}
+			);
+			share_hover.hover(function(){$(this).find(".download_label").css("visibility","visible");},function(){$(this).find(".download_label").css("visibility","hidden");});
+			share_hover.hover(function(){$(this).find(".share_label").css("visibility","visible");},function(){$(this).find(".share_label").css("visibility","hidden");});
+			share_hover.hover(function(){$(this).find(".delete_label").css("visibility","visible");},function(){$(this).find(".delete_label").css("visibility","hidden");});
+			//  http: //stackoverflow.com/questions/9372665/how-to-show-hide-div-on-mouseover-when-div-set-to-display-none-in-gridview-ite
+			//if($("#dragandrophandler1","#dragandrophandler2","#dragandrophandler3"))alert("#drags1,2,3");
+			obj.on('dragenter', function (e) 
+			{
+				e.stopPropagation();
+				e.preventDefault();
+				//$(this).css('border', '2px solid #0B85A1');
+				//$(this).fadeIn(500).fadeOut(500).fadeIn(500).fadeOut(500).fadeIn(500);
+				// http: //stackoverflow.com/questions/19049484/blinking-a-div-with-background-color-in-jquery-using-setinterval/19049560
+				// http: //stackoverflow.com/questions/2595392/what-does-the-question-mark-and-the-colon-ternary-operator-mean-in-objectiv
+				// http: //stackoverflow.com/questions/1771786/question-mark-in-javascript
+				var this_border = $(this);
+				this.blink = setInterval(function () {
+					//$(this).css("border", function () {
+					this_border.css("border", function () {
+						this.switch = !this.switch
+						return this.switch ? "2px solid #0B85A1" : "" ;
+					});
+				}, 500);
+			});
+			obj.on('dragover', function (e) 
+			{
+				 e.stopPropagation();
+				 e.preventDefault();
+			});
+			obj.on('dragleave', function (e) 
+			{
+				 e.stopPropagation();
+				 e.preventDefault();				 
+				 $(this).stop();
+				 $(this).css('border', '2px dotted #0B85A1');
+				 var stopblink = clearInterval(this.blink);
+			});
+			obj.on('drop', function (e) 
+			{
+				var stopblink = clearInterval(this.blink);
+				 $(this).css('border', '2px dotted #0B85A1');
+				 e.preventDefault();
+				 var files = e.originalEvent.dataTransfer.files;
+			 
+				 //We need to send dropped files to Server
+				 handleFileUpload(files,obj);
+			});
+			$(document).on('dragenter', function (e) 
+			{
+				e.stopPropagation();
+				e.preventDefault();
+			});
+			$(document).on('dragover', function (e) 
+			{
+			  e.stopPropagation();
+			  e.preventDefault();
+			  obj.css('border', '2px dotted #0B85A1');
+			});
+			$(document).on('drop', function (e) 
+			{
+				e.stopPropagation();
+				e.preventDefault();
+			});
+			 
+			});
+		} );
+		</script>
+		<script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+		<script type="text/javascript" src="js/sharesendmultiple/jquery.emailinput.min.js"></script>
+		
+		<link href="http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+		<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+		<script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+		
+		<script type="text/javascript" src="js/notification/jquery_v_1.4.js"></script>
+        <script type="text/javascript" src="js/notification/jquery_notification_v.1.js"></script>
+		
+		<script type="text/javascript">
+			$(document).ready(function(){
+				var confirm_deleted;
+				var jquery_dialog = $.noConflict(true);
+				var jquery_share = $.noConflict(true);
+				jquery_dialog('#dialogDelConfirm').dialog({autoOpen: false, modal:true});
+				jquery_dialog('#dialogDeleted').dialog({autoOpen: false, modal:true});
+				jquery_dialog('#dialogShare').dialog({autoOpen: false, modal:true});
+				var editUserClassesFolderCount = jQuery.parseJSON('<?php $EditUserProfile->EditUserClassesFolderCount()?>');
+				var ar = [];
+				for (var i=1; i < editUserClassesFolderCount.length + 1; i++){
+					ar.push(i);
+				}
+				var etarget_fadeout;
+				$.each(ar, function(index,valueEach) {
+					var msg_file_del = [];
+					msg_file_del[valueEach] = $('#ajax_msg'+valueEach);
+					
+					/*
+					$('.delete'+valueEach).click(function(e){
+						e.preventDefault();
+						var originalElement = $("#contextMenu"+valueEach).data('originalElement'); // http: //stackoverflow.com/questions/4430015/jquery-context-menu-finding-what-element-triggered-it-off
+						//alert('delete was clicked by ' + originalElement.id );
+						var MSG_DEL_FILE = originalElement.id;
+						var AJAX_DEL_FILE = 'delete_file='+originalElement.id;
+						jquery_dialog( "#dialogDelConfirm" ).dialog({
+							open: function (event, ui) {  // http: //stackoverflow.com/questions/9268593/jquery-set-modal-dialog-overlay-color
+								$(".ui-widget-overlay").css({
+									opacity: 0.2,
+									filter: "Alpha(Opacity=20)",
+									background: "black"
+								});
+							}
+						});
+						jquery_dialog('#dialogDelConfirm').dialog("open");
+						jquery_dialog( "#dialogDelConfirm" ).dialog({
+							//autoOpen: false,
+							resizable: false, // prevent resize of the dialog
+							height:350, // set the height to 150px
+							modal: true, // show a modal overlay in background
+							//show: { effect: "blind", duration: 300 },
+							
+							buttons: {
+								"Confirmar": function setSuccessMsgDel() {
+									$.ajax({
+										type: "POST",
+										url: "delete_file2.php",
+										data: AJAX_DEL_FILE,
+										success:function(data){
+											if(data == 'File deleted'){
+												//return confirm_deleted = true;
+												//this_context.parent().parent().parent().hide();
+												msg_file_del[valueEach].html('File deleted : '+MSG_DEL_FILE);
+												setTimeout(function(){
+													msg_file_del[valueEach].fadeOut("slow");
+												},2500);
+												msg_file_del[valueEach].show();
+											}
+										}
+									});
+									jquery_dialog( this ).dialog( "close" );
+								},
+								"Cancelar": function() {
+									jquery_dialog( this ).dialog( "close" );
+								}
+							}
+						});
+						jquery_dialog("#dialogDelConfirm").prev().css("background","#5c75a9");
+						jquery_dialog("#dialogDelConfirm").prev().css("border","#1a356e");
+						jquery_dialog("#dialogDelConfirm").css("background","#FFFFFF");
+						jquery_dialog("#dialogDelConfirm").html("Excluir "+MSG_DEL_FILE+" ?");
+						
+						var check_del = false;
+						if(check_del == true){
+							msg_file_del.html('File deleted : '+MSG_DEL_FILE);
+							setTimeout(function(){
+								msg_file_del.fadeOut("slow");
+							},2500);
+							msg_file_del.show();
+						}
+					});
+					*/
+					$('.share_label'+valueEach).click(function(){
+						var this_context = $(this);
+						//alert($(this).attr('id'));
+						//var del_file = 'delete_file='+$(this).attr('id');
+						
+						var filename_share = $(this).attr('id');
+						var AJAX_DATA = 'delete_file='+$(this).attr('id');
+						
+						jquery_dialog( "#dialogDelConfirm" ).dialog({
+							open: function (event, ui) {  // http: //stackoverflow.com/questions/9268593/jquery-set-modal-dialog-overlay-color
+								$(".ui-widget-overlay").css({
+									opacity: 0.2,
+									filter: "Alpha(Opacity=20)",
+									background: "black"
+								});
+							}
+						});
+						
+						jquery_dialog('#dialogDelConfirm').dialog("open");
+						jquery_dialog( "#dialogDelConfirm" ).dialog({
+							//autoOpen: false,
+							resizable: false, // prevent resize of the dialog
+							width:700,
+							height:350, // set the height to 150px
+							modal: true, // show a modal overlay in background
+							//show: { effect: "blind", duration: 300 },
+							/*
+							open: function (event, ui) {
+								$(".ui-widget-overlay").css({
+									opacity: 0.2,
+									filter: "Alpha(Opacity=20)",
+									background: "black"
+								});
+							},
+							*/
+							buttons: {
+								"Confirmar": function setSuccessMsgDel() {
+									$.ajax({
+										type: "POST",
+										url: "delete_file2.php",
+										data: AJAX_DATA,
+										success:function(data){
+											if(data == 'File deleted'){
+												//return confirm_deleted = true;
+												this_context.parent().parent().parent().fadeOut("slow");
+												//this_context.parent().parent().parent().hide();
+												msg_file_del[valueEach].html('File deleted : '+AJAX_DATA);
+												setTimeout(function(){
+													msg_file_del[valueEach].fadeOut("slow");
+												},2500);
+												msg_file_del[valueEach].show();
+											}
+										}
+									});
+									jquery_dialog( this ).dialog( "close" );
+								},
+								"Cancelar": function() {
+									jquery_dialog( this ).dialog( "close" );
+									
+									//var checkbox_share = jquery_dialog("input[type='checkbox']:checked").map(function(){
+									var checkbox_share = jquery_dialog(".checkbox_share:checked").map(function(){
+										//return jquery_dialog(this).val();
+										return $(this).val();
+									}).get().join(", ");
+
+									//alert(checkbox_share);
+									
+									/*  http: //bytutorial.com/blogs/jquery/jquery-get-selected-checkboxes  */
+									/* declare an checkbox array */
+									var chkArray = [];
+									
+									/* look for all checkboes that have a class 'chk' attached to it and check if it was checked */
+									jquery_dialog(".checkbox_share:checked").each(function() {
+										chkArray.push($(this).val());
+									});
+									
+									/* we join the array separated by the comma */
+									var selected;
+									selected = chkArray.join(',') + ",";
+									
+									/* check if there is selected checkboxes, by default the length is 1 as it contains one single comma */
+									if(selected.length > 1){
+										alert("You have selected " + selected);	
+									}else{
+										alert("Please at least one of the checkbox");	
+									}
+									
+									showNotification({
+										type : "success",
+										message: "Canceled file sharing : "+filename_share+".",
+										autoClose: true,
+										duration: 2
+									});
+								}
+							}
+						});
+						jquery_dialog("#dialogDelConfirm").prev().css("background","#5c75a9");
+						jquery_dialog("#dialogDelConfirm").prev().css("border","#1a356e");
+						jquery_dialog("#dialogDelConfirm").css("background","#FFFFFF");
+						//jquery_dialog("#dialogDelConfirm").html("Excluir "+AJAX_DATA+" ?");
+						var friend_array = jQuery.parseJSON('<?php echo $EditUserProfile->EditUserFriendShare(); ?>');
+						var friend_share = [];
+						var friend_share2 = [];
+						var friend_share3 = [];
+						var friend_share4 = [];
+						// http: //stackoverflow.com/questions/1208467/how-to-add-items-to-a-unordered-list-ul-using-jquery
+						var obj = {};
+						var obj2 = {};
+						// http: //stackoverflow.com/questions/4825899/how-to-push-both-key-and-value-into-an-array-in-jquery
+						$.each(friend_array, function(i,item) {
+							obj[i] = item;
+							//alert(JSON.stringify(obj[i]));
+							// http: //stackoverflow.com/questions/7306669/how-to-get-all-properties-values-of-a-javascript-object-without-knowing-the-key
+							//for(var key in obj[i]){
+							for(var key in item){
+								//alert(i+':'+JSON.stringify(item[key]));
+								//friend_share3.push('<li style="list-style:none;display:block;margin-right:10px;width: 50%;float: left;padding: 5px 0;"><input type="checkbox">&nbsp '+i+':'+JSON.stringify(item[key])+'</input></li>');
+								friend_share3.push('<li style="list-style:none;margin-right:10px;"><input type="checkbox">&nbsp '+i+':'+JSON.stringify(item[key])+'</input></li>');
+							}
+							//obj2[i] = {"mykey0":"myvalue0","mykey1":"myvalue1","mykey2":"myvalue2"};
+							obj2[i] = {"mykey0":"myvalue0"};
+							// http ://stackoverflow.com/questions/8260156/how-do-i-create-dynamic-variable-names-inside-a-loop
+							friend_share4[i] = friend_share3;
+							//friend_share4[i] = ["<li style='list-style:none;margin-right:10px;'>user1</li>","<li style='list-style:none;margin-right:10px;'>user2</li>","<li style='list-style:none;margin-right:10px;'>user3</li>"];
+							
+							
+							$.each(item, function(i2, item2){
+								friend_share.push('<li style="list-style:none;display:block;margin-right:10px;"><input type="checkbox" class="checkbox_share" name='+JSON.stringify(item2)+' value='+JSON.stringify(item2)+'>&nbsp '+i+JSON.stringify(item2)+'</input></li>');
+							});
+							// http: //stackoverflow.com/questions/2487841/jquery-parse-json-multidimensional-array
+							//friend_share2.push('<div style="display:inline;border:1px dashed red;">'+$.each(item, function (i3,item3){ '<li>'+JSON.stringify(item3)+'</li>'; })+'</div>');
+							
+							//friend_share2.push('<div style="display:inline;border:1px dashed red;">'+JSON.stringify(item)+'</div>');
+							//friend_share2.push('<div style="display:inline;border:1px dashed red;">'+ JSON.stringify(obj[i]) +'</div>');
+							//friend_share2.push('<div style="display:inline;border:1px dashed red;">'+ JSON.stringify(obj[i]) +'</div>');
+							
+							//friend_share2.push('<div style="display:inline;border:1px dashed red;">'+ JSON.stringify(obj2[i]) + friend_share4[i].join('') +'</div>');
+							//friend_share2.push('<div style="display:inline;border:1px dashed red;">'+ JSON.stringify(obj2[i]) +'</div>');
+							friend_share2.push('<div style="display:block;border:1px dashed red;">'+ JSON.stringify(obj2[i]) + friend_share4[i].join('') +'</div>');
+						});
+						//alert(JSON.stringify(obj2));
+						jquery_dialog("#dialogDelConfirm").html("<div>Compartilhar  "+filename_share+" ?</div>"
+						+"<div>"
+							// http: //www.w3schools.com/css/css3_multiple_columns.asp
+							// http: //stackoverflow.com/questions/6509106/is-there-a-way-to-break-a-list-into-columns
+							// http: //stackoverflow.com/questions/486349/dividing-long-list-of-li-tags-into-columns
+							+"<ul style='column-count:2;'>"
+							+friend_share.join('')
+							//+friend_share2.join('')
+							//+friend_share3.join('')
+							// http: //stackoverflow.com/questions/35281368/jquery-push-giving-a-comma
+							+"</ul>"
+							//+JSON.stringify(friend_array)
+							+"<ul>"
+								+"<!-- <li style='list-style:none;'>user6@feibook.com.br</li> -->"
+								+"<fieldset>"
+									+"<legend>Input</legend>"
+									+"<div>From: <input type='text' id='from' class='emailinput ei' value='me@jqueryscript.net' /></div>"
+									+"<div>To: <input type='email' id='to' class='emailinput ei' value='user1@jqueryscript.net,jqueryscript.net' /></div>"
+								+"</fieldset>"
+							+"</ul>"
+						+"</div>");
+						
+						jquery_share('.emailinput').emailinput({ onlyValidValue: true, delim: ',' }); // initialize
+						jquery_share('#getAddress').bind('click', function() {
+							var output = jquery_share('#output').empty();
+							output.append('From: ' + jquery_share('#from').val() + '<br />');
+							output.append('To: ' + jquery_share('#to').val() + '<br />');
+						});
+						/*
+						$.ajax({
+							type: "POST",
+							url: "delete_file2.php",
+							data: AJAX_DATA,
+							success:function(data){
+								if(data == 'File deleted'){
+									var confirm_deleted = true;
+								}
+							}
+						});
+						
+						if(is_deleted == true) {
+							$(this).parent().parent().remove();
+							msg_file_del.html('File deleted : '+AJAX_DATA);
+							setTimeout(function(){
+								msg_file_del.fadeOut("slow");
+							},2500);
+							msg_file_del.show();
+						}
+						*/
+						var check_del = false;
+						if(check_del == true){
+							msg_file_del.html('File deleted : '+AJAX_DATA);
+							setTimeout(function(){
+								msg_file_del.fadeOut("slow");
+							},2500);
+							msg_file_del.show();
+						}
+					});
+					
+					$('.delete_label'+valueEach).click(function(){
+						var this_context_delete = $(this);
+						//alert($(this).attr('id'));
+						//var del_file = 'delete_file='+$(this).attr('id');
+						
+						var FILENAME_DELETED = $(this).attr('id');
+						var AJAX_DATA = 'delete_file='+$(this).attr('id');
+						
+						jquery_dialog( "#dialogDelConfirm" ).dialog({
+							open: function (event, ui) {  // http: //stackoverflow.com/questions/9268593/jquery-set-modal-dialog-overlay-color
+								$(".ui-widget-overlay").css({
+									opacity: 0.2,
+									filter: "Alpha(Opacity=20)",
+									background: "black"
+								});
+							}
+						});
+						
+						jquery_dialog('#dialogDelConfirm').dialog("open");
+						jquery_dialog( "#dialogDelConfirm" ).dialog({
+							//autoOpen: false,
+							resizable: false, // prevent resize of the dialog
+							width:350,
+							height:300, // set the height to 150px
+							modal: true, // show a modal overlay in background
+							//show: { effect: "blind", duration: 300 },
+							/*
+							open: function (event, ui) {
+								$(".ui-widget-overlay").css({
+									opacity: 0.2,
+									filter: "Alpha(Opacity=20)",
+									background: "black"
+								});
+							},
+							*/
+							buttons: {
+								"Confirmar": function setSuccessMsgDel() {
+									$.ajax({
+										type: "POST",
+										url: "delete_file2.php",
+										data: AJAX_DATA,
+										success:function(data){
+											if(data == 'File deleted'){
+												//return confirm_deleted = true;
+												this_context_delete.parent().parent().parent().fadeOut("slow");
+												//this_context.parent().parent().parent().hide();
+												msg_file_del[valueEach].html('File deleted : '+AJAX_DATA);
+												setTimeout(function(){
+													msg_file_del[valueEach].fadeOut("slow");
+												},2500);
+												msg_file_del[valueEach].show();
+												showNotification({
+													type : "success",
+													message: "Deleted file : "+FILENAME_DELETED+".",
+													autoClose: true,
+													duration: 2
+												});
+											}
+										}
+									});
+									jquery_dialog( this ).dialog( "close" );
+								},
+								"Cancelar": function() {
+									jquery_dialog( this ).dialog( "close" );
+									/*
+									showNotification({
+										type : "success",
+										message: "Canceled file sharing : "+FILENAME_DELETED+".",
+										autoClose: true,
+										duration: 2
+									});
+									*/
+									jquery_dialog('#dialogDeleted').html('Deleted file : '+FILENAME_DELETED);
+									jquery_dialog('#dialogDeleted').css("padding","0");
+									jquery_dialog('#dialogDeleted').css("font-size","15px");
+									jquery_dialog('#dialogDeleted').dialog({
+										autoOpen:false,
+										modal:false,
+										width:700,
+										height:35,
+										open: function(event, ui){
+											setTimeout(function(){
+											jquery_dialog('#dialogDeleted').dialog('close')},2000);
+											// http: //stackoverflow.com/questions/10179040/jquery-dialog-open-and-automatically-close-after-3-seconds
+										},
+										//position: { my: "center", at: "top", of: window }
+										// https: //api.jqueryui.com/dialog/#option-position
+										//position: { my: 'top', at: 'top+60', of :window }
+										//position : ['center',65]
+										position : { my: 'bottom+325', at: 'center+50', of :window }
+										// http: //stackoverflow.com/questions/9304830/jqueryui-dialog-positioning
+										//position: ['center',60]
+										// http: //stackoverflow.com/questions/11230645/jquery-ui-dialog-positioning-adjust-position-top-by-20px
+									}).dialog("widget").find(".ui-dialog-titlebar").hide();
+									// http: //stackoverflow.com/questions/13283108/how-to-remove-jquery-ui-dialog-title-bar
+									jquery_dialog('#dialogDeleted').dialog("open");									
+								}
+							}
+						});
+						jquery_dialog("#dialogDelConfirm").prev().css("background","#5c75a9");
+						jquery_dialog("#dialogDelConfirm").prev().css("border","#1a356e");
+						jquery_dialog("#dialogDelConfirm").css("background","#FFFFFF");
+						jquery_dialog("#dialogDelConfirm").html("Excluir "+FILENAME_DELETED+" ?");
+						/*
+						$.ajax({
+							type: "POST",
+							url: "delete_file2.php",
+							data: AJAX_DATA,
+							success:function(data){
+								if(data == 'File deleted'){
+									var confirm_deleted = true;
+								}
+							}
+						});
+						
+						if(is_deleted == true) {
+							$(this).parent().parent().remove();
+							msg_file_del.html('File deleted : '+AJAX_DATA);
+							setTimeout(function(){
+								msg_file_del.fadeOut("slow");
+							},2500);
+							msg_file_del.show();
+						}
+						*/
+						var check_del = false;
+						if(check_del == true){
+							msg_file_del.html('File deleted : '+FILENAME_DELETED);
+							setTimeout(function(){
+								msg_file_del.fadeOut("slow");
+							},2500);
+							msg_file_del.show();
+						}
+					});
+				});
+				
+				$.each(ar, function(index,valueContext) {
+					var msg_file_del = [];
+					msg_file_del[valueContext] = $('#ajax_msg'+valueContext);
+					$('.files'+valueContext+' li').contextmenu(function(e){
+						e.preventDefault();
+						//$(this).css("border","1px solid rgba(144,144,144,0.3)");
+						
+						//$(this).css("background-color","rgba(144,144,144,0.1)");
+						
+						/*
+						this.hover_background_color = function(){
+							var context_clicked = 'hello';
+							return context_clicked;
+						}
+						this.hover_background_color();
+						*/
+						this.hover_background_color = function(){
+							return true;
+						}
+						
+						var target_clicked_contextmenu = $(this);
+						target_clicked_contextmenu.css("border","1px dotted green");
+						$("#contextMenu"+valueContext).data('originalElement', this);  // http: //stackoverflow.com/questions/4430015/jquery-context-menu-finding-what-element-triggered-it-off
+						//$(e.target).parent().parent().css("border","1px dotted red");  // http: //stackoverflow.com/questions/16980935/in-jquery-context-menu-how-can-i-identify-the-right-clicked-element-is-href-or-n
+						//$(e.target).parent().parent().fadeOut("slow");
+						// http: //stackoverflow.com/questions/16980935/in-jquery-context-menu-how-can-i-identify-the-right-clicked-element-is-href-or-n
+						//$("#contextMenu"+valueContext).data('originalElement', this).parent().find('li').css("border","1px dotted red");
+						$("#contextMenu"+valueContext).show();
+						$("#contextMenu"+valueContext).css({left: (e.pageX - 90) +'px', top: (e.pageY - 60) +'px' });
+						
+						var this_context = $(this);
+						//alert($(this).attr('id'));
+						//var del_file = 'delete_file='+$(this).attr('id');
+
+						var AJAX_DATA = 'delete_file='+$(this).attr('id');
+						var show_alert = $(this).attr('id');
+						//$("#contextMenu"+valueContext).html('apagar '+show_alert+' ?');
+						//alert(show_alert);
+						
+						
+						showNotification({
+							type : "success",
+							message: "This is a sample success notification",
+							autoClose: true,
+							duration: 2
+						});
+						
+						
+						$('.delete'+valueContext).click(function(e){
+							e.preventDefault();
+							var originalElement = $("#contextMenu"+valueContext).data('originalElement'); // http: //stackoverflow.com/questions/4430015/jquery-context-menu-finding-what-element-triggered-it-off
+							//alert('delete was clicked by ' + originalElement.id );
+							var MSG_DEL_FILE = originalElement.id;
+							var AJAX_DEL_FILE = 'delete_file='+originalElement.id;
+							jquery_dialog( "#dialogDelConfirm" ).dialog({
+								open: function (event, ui) {  // http: //stackoverflow.com/questions/9268593/jquery-set-modal-dialog-overlay-color
+									$(".ui-widget-overlay").css({
+										opacity: 0.2,
+										filter: "Alpha(Opacity=20)",
+										background: "black"
+									});
+								}
+							});
+							jquery_dialog('#dialogDelConfirm').dialog("open");
+							jquery_dialog( "#dialogDelConfirm" ).dialog({
+								//autoOpen: false,
+								resizable: false, // prevent resize of the dialog
+								height:350, // set the height to 150px
+								modal: true, // show a modal overlay in background
+								//show: { effect: "blind", duration: 300 },
+								/*
+								open: function (event, ui) {
+									$(".ui-widget-overlay").css({
+										opacity: 0.2,
+										filter: "Alpha(Opacity=20)",
+										background: "black"
+									});
+								},
+								*/
+								buttons: {
+									"Confirmar": function setSuccessMsgDel() {
+										$.ajax({
+											type: "POST",
+											url: "delete_file2.php",
+											data: AJAX_DEL_FILE,
+											success:function(data){
+												if(data == 'File deleted'){
+													//return confirm_deleted = true;
+													//$(e.target).parent().parent().fadeOut("slow");
+													msg_file_del[valueContext].html('File deleted : '+MSG_DEL_FILE);
+													setTimeout(function(){
+														msg_file_del[valueContext].fadeOut("slow");
+													},2500);
+													msg_file_del[valueContext].show();
+													target_clicked_contextmenu.fadeOut("slow");
+													showNotification({
+														type : "success",
+														message: "File deleted : "+MSG_DEL_FILE+".",
+														autoClose: true,
+														duration: 2
+													});
+												}
+											}
+										});
+										jquery_dialog( this ).dialog( "close" );
+									},
+									"Cancelar": function() {
+										jquery_dialog( this ).dialog( "close" );
+										//target_clicked_contextmenu.fadeOut("slow");
+										showNotification({
+											type : "success",
+											message: "Canceled delete file : "+MSG_DEL_FILE+".",
+											autoClose: true,
+											duration: 2
+										});
+									}
+								}
+							});
+							jquery_dialog("#dialogDelConfirm").prev().css("background","#5c75a9");
+							jquery_dialog("#dialogDelConfirm").prev().css("border","#1a356e");
+							jquery_dialog("#dialogDelConfirm").css("background","#FFFFFF");
+							jquery_dialog("#dialogDelConfirm").html("Excluir "+MSG_DEL_FILE+" ?");
+							/*
+							$.ajax({
+								type: "POST",
+								url: "delete_file2.php",
+								data: AJAX_DATA,
+								success:function(data){
+									if(data == 'File deleted'){
+										var confirm_deleted = true;
+									}
+								}
+							});
+							*/
+							var check_del = false;
+							if(check_del == true){
+								msg_file_del.html('File deleted : '+MSG_DEL_FILE);
+								setTimeout(function(){
+									msg_file_del.fadeOut("slow");
+								},2500);
+								msg_file_del.show();
+							}
+						});
+						
+					});
+					$(document).on('click', function(e){
+						console.log('clicked', this);
+						$("#contextMenu"+valueContext).hide();
+						
+						$('.files'+valueContext+' li').css("background-color","#FFFFFF");
+						$('.files'+valueContext+' li').css("border","1px solid rgba(144,144,144,0.1)");
+						/*
+						this.hover_background_color = function(){
+							//var context_clicked = false;
+							//return false;
+						}
+						
+						this.hover_background_color();
+						*/
+						
+						//$('.files'+valueContext+' li').css("background-color","#FFFFFF");
+						
+						//$('.files'+valueContext+' li').css("border","1px solid rgba(144,144,144,0.1)");
+						
+						//$('.files'+valueContext+' li').css("background-color","#FFFFFF");
+						
+						/*
+						$('.files'+valueContext+' li').hover(
+							function(){
+								$(this).css("background-color","rgba(144,144,144,0.1)");
+							},
+							function(){
+								$(this).css("background-color","white");
+							}
+						);
+						*/
+					});
+				});
+				
+				
+				/*
+				$(".files li").contextmenu(function(e) {
+					e.preventDefault();
+					$("#contextMenu").show();
+					$("#contextMenu").css({left: (e.pageX - 90) +'px', top: (e.pageY - 60) +'px' });
+				});
+				$(document).on('click', function(e){
+					console.log('clicked', this);
+					$("#contextMenu").hide();
+				});
+				*/
+			});
+		</script>
+		<!--
+		<script type="text/javascript">
+		$(document).ready(function(){
+			$.contextMenu({
+					selector: '.files', 
+					callback: function(key, options) {
+						var m = "clicked: " + key;
+						window.console && console.log(m) || alert(m); 
+					},
+					items: {
+						"edit": {name: "Edit", icon: "edit"},
+						"cut": {name: "Cut", icon: "cut"},
+					    "copy": {name: "Copy", icon: "copy"},
+						"paste": {name: "Paste", icon: "paste"},
+						"delete": {name: "Delete", icon: "delete"},
+						"sep1": "---------",
+						"quit": {name: "Quit", icon: function(){
+							return 'context-menu-icon context-menu-icon-quit';
+						}}
+					}
+				});
+
+				$('.files').on('click', function(e){
+					console.log('clicked', this);
+					alert();
+				});
+		});
+		</script>
+		-->
+    </head>
+	
+    <body>
+		<div id="dialogDelConfirm"></div>
+		<div id="dialogDeleted"></div>
+		<div id="dialogShare"></div>
+		<!--  https://css-tricks.com/better-tabs-with-round-out-borders/  https://css-tricks.com/examples/RoundOutTabs2/  -->
+		<!--
+		<ul class="tabrow">			
+			<li class="selected">calculo 1</li>
+			<li>GA</li>
+			<li>desenho</li>
+			<li>C++</li>									
+			<li>sociologia</li>			
+		</ul>
+		-->
+		<div id="bg">			
+			<div id="headerTop">
+				<!--
+				<ul class="tabrow">			
+					<li class="selected">calculo 1</li>
+					<li>GA</li>
+					<li>desenho</li>
+					<li>C++</li>									
+					<li>sociologia</li>			
+				</ul>			
+				-->
+				<div id="header">				
+					<div id="logo">
+						<a href="main.php"><img src="images/feibook-logo6.jpg" height="40px" border="0"/></a> &nbsp
+						<h1></h1>
+					</div>										
+					<div id="profile_thumbnail">
+					
+						<?php
+							/*
+							// stackoverflow.com/questions/17335239/php-and-jquery-show-hide-div-if-user-logged-in-or-not									
+							//if (!isset($_SESSION['id_ofuser']) || empty($_SESSION['id_of_user'])){  ?  >
+							if ($_SESSION['id_of_user']==$_GET['id']){  ?>
+								<img src="images/profile_thumbnail.png" border="0" height="25px" width="25px"/> &nbsp					
+								<?php }
+								else {  ?>
+								<a href="profile.php?id=<?php echo $EditUserProfile->identification;?>"><img src="images/profile_thumbnail.png" border="0" height="25px" width="25px"/></a> &nbsp
+								<?php 
+							}
+							*/
+						?>
+					
+					</div>
+					<div id="userlogin">
+							<!--  <a href="logout.php">Logout</a>  -->
+							<!--  http:// www.9lessons.info/2012/06/simple-drop-down-menu-with-jquery-and.html  -->
+							<!--  http:// www.9lessons.info/2014/09/facebook-style-notification-popup-using.html  -->
+										<?php 
+										// stackoverflow.com/questions/17335239/php-and-jquery-show-hide-div-if-user-logged-in-or-not									
+										//if (!isset($_SESSION['id_ofuser']) || empty($_SESSION['id_of_user'])){  ?  >
+											if ($_SESSION['id_of_user']==$_GET['id']){  ?>
+												<div class="dropdown" style="margin-top:20px;">
+													<a class="account" > &nbsp  
+														<table style="margin-top:-15px;">
+															<tr>
+																<td><!-- <img src="images/profile_thumbnail.png" border="0" height="25px" width="25px"/> -->
+																	<img src="images/profile_thumbnail.png" border="0" height="25px" width="25px"/>
+																</td>										
+																<td> &nbsp <?php echo "minha conta"//$UserProfile->username; ?></td>
+																<td><img src="images/icon-dropdown.png" width="15px"></td>
+															</tr>
+														</table>
+													</a>
+													<div class="submenu">
+														<ul class="root">
+															<li ><a href="edit_profile.php?id=<?php echo $EditUserProfile->identification;?>" >Editar Perfil</a></li>
+															<li ><a href="boleto/boleto_itau_meses.php" target="_blank">Pagamentos</a></li>
+															<!--  http:/ /www.htmlgoodies.com/beyond/reference/article.php/3472591/How-Do-I-Create-a-Custom-404-Error-Page.htm   -->
+															<li ><a href="logout.php">Sair (Log Out)</a></li>
+															<!--  <li ><a href="#feedback">Send Feedback</a></li>  -->
+														</ul>
+													</div>
+												</div>
+											<?php }
+											else {  ?>
+												
+												<div class="dropdown" style="margin-top:20px;">
+													<a class="account_other_view" > &nbsp  
+														<table style="margin-top:-15px;">
+															<tr>
+																<td><!-- <img src="images/profile_thumbnail.png" border="0" height="25px" width="25px"/> -->
+																	<a href="profile.php?id=<?php echo $EditUserProfile->identification;?>"><img src="images/profile_thumbnail.png" border="0" height="25px" width="25px"/></a>
+																</td>										
+																<td><a class="account" > <?php echo "minha conta"//$UserProfile->username; ?><img src="images/icon-dropdown.png" width="15px"></td>
+																<td></a></td>
+															</tr>
+														</table>
+													</a>
+													<div class="submenu">
+														<ul class="root">
+															<li ><a href="edit_profile.php?id=<?php echo $EditUserProfile->identification;?>" >Editar Perfil</a></li>
+															<li ><a href="boleto/boleto_itau_meses.php" target="_blank">Pagamentos</a></li>
+															<!--  http:/ /www.htmlgoodies.com/beyond/reference/article.php/3472591/How-Do-I-Create-a-Custom-404-Error-Page.htm   -->
+															<li ><a href="logout.php">Sair (Log Out)</a></li>
+															<!--  <li ><a href="#feedback">Send Feedback</a></li>  -->
+														</ul>
+													</div>
+												</div>
+												
+												<!-- <a href="logout.php" style="text-decoration:none;">Logout</a> -->
+											<?php 
+											}
+										?>							
+					</div>
+				</div>
+			</div>
+			<div id="outer">
+				<!--
+				<div id="header">
+					<div id="logo">
+
+                            <a href="main.php"><img src="images/gpapplogo1.png" border="0"/></a> &nbsp
+                            <h1>gp</h1>
+
+					</div>										
+					<div id="profile_thumbnail">
+                            <img src="images/profile_thumbnail.png" border="0" height="25px" width="25px"/> &nbsp
+					</div>
+					<div id="userlogin">
+                            
+                            <a href="logout.php">Logout</a>
+
+					</div>					
+				</div>
+				-->
+				
+				<div id="container" style="height: auto;border:1px dashed red;">
+				<!--
+				http://davidwalsh.name/read-pdf-doc-file-php
+				http://davidwalsh.name/send-text-message
+				-->
+				
+		<!--
+		<ul class="tabrow">			
+			<li class="selected">calculo 1</li>
+			<li>GA</li>
+			<li>desenho</li>
+			<li>C++</li>									
+			<li>sociologia</li>			
+		</ul>
+		-->
+					<div style="margin-top:-30px;">
+						
+
+						<!--  http: //code.tutsplus.com/tutorials/create-a-slick-tabbed-content-area-using-css-jquery--net-13  -->
+						<!--  http: //stackoverflow.com/questions/1070760/javascript-function-in-href-vs-onclick/11348403#11348403  -->
+						<!--  http: //stackoverflow.com/questions/15304027/how-to-change-tabs-programmatically-in-jquery-ui-1-9 -->
+						
+						<!--
+						<ul class="tabrow">			
+							<li onclick="javascript:tabSwitch('tab_1', 'content_1');" id="tab_1" class="selected"><a href="#">calculo 1</a></li>
+							<li onClick="javascript:tabSwitch('tab_2', 'content_2');" id="tab_2"><a href="#">GA</a></li>
+							<li onClick="javascript:tabSwitch('tab_3', 'content_3');" id="tab_3"><a href="#">desenho</a></li>
+							<li onClick="javascript:tabSwitch('tab_4', 'content_4');" id="tab_4"><a href="#">C++</a></li>																
+						</ul>
+						-->
+						<!--
+						<ul class="tabrow">
+							<li onclick="javascript:tabSwitchFolder(1, 4, 'tab_', 'content_');" id="tab_1" class="selected"><a href="#">calculo 1</a></li>
+							<li onClick="javascript:tabSwitchFolder(2, 4, 'tab_', 'content_');" id="tab_2"><a href="#">GA</a></li>
+							<li onClick="javascript:tabSwitchFolder(3, 4, 'tab_', 'content_');" id="tab_3"><a href="#">desenho</a></li>
+							<li onClick="javascript:tabSwitchFolder(4, 4, 'tab_', 'content_');" id="tab_4"><a href="#">C++</a></li>																
+						</ul>
+						-->												
+						<!--  https://css-tricks.com/better-tabs-with-round-out-borders/  https://css-tricks.com/examples/RoundOutTabs2/  -->
+						<ul class="tabrow" id="tabrow">
+							<!--  http: //jsfiddle.net/syahrasi/us8uc/  -->
+							<!--  http: //www.thecssninja.com/demo/css_tree/  -->
+							<!--  http: //stackoverflow.com/questions/22297964/bootstrap-tabs-next-previous-buttons-for-forms   http: //www.bootply.com/120472 -->
+							<!--  https: //css-tricks.com/jquery-ui-tabs-with-nextprevious/  -->
+							<!--  **UI** excellent awesome UI elemnts  http: //semantic-ui.com/collections/menu.html#secondary-menu  [NSDate 29/feb/2016]   -->
+							<?php //$EditUserProfile->EditUserClasses(); ?>							
+							
+							<?php 
+							if(count($EditUserProfile->EditUserClassesPreviousNext()) < 6){
+							$array_class_folder = $EditUserProfile->EditUserClasses();
+							} else {
+							//$EditUserProfile->EditUserDisplayFolder();
+							echo $paginationDisplay;
+							//$array_class_folder = $EditUserProfile->EditUserClassesNextFolder();
+							//echo '<li>next</li>';
+							}
+							?>
+							
+						</ul>						
+					</div>
+					<!--  http: //code.tutsplus.com/tutorials/create-a-slick-tabbed-content-area-using-css-jquery--net-13  -->
+					<table border="0" cellpadding="0" cellspacing="0" style="border-left:1px solid rgba(144,144,144,0.25);border-bottom:1px solid rgba(144,144,144,0.25);border-right:1px solid rgba(144,144,144,0.25);">
+						<tr>
+							<td width="2%">
+							
+							</td>
+							<td width="auto">								
+								<?php echo $EditUserProfile->thumbnail_profile_image;?>
+							</td>
+							<td width="auto">
+								
+							</td>			
+							<td width="2%">
+							
+							</td>							
+							<td style="vertical-align:top !important;width:100%;background:#FFF;height:390px;border-left:1px solid rgba(144,144,144,0.25);">
+								<!-- https://css-tricks.com/snippets/php/display-styled-directory-contents/ -->
+								<!--  http://stackoverflow.com/questions/720751/how-to-read-a-list-of-files-from-a-folder-using-php  -->
+								<!--  http://stackoverflow.com/questions/291813/recommended-way-to-embed-pdf-in-html  -->
+								<!--  https://www.behance.net/gallery/29476973/Document-icons  -->
+								<!--  http://www.iconarchive.com/search?q=pdf+doc&page=1 -->
+									<div style="margin-left:0px;">															
+										<?php $EditUserProfile->EditUserClassesFolder(); ?>
+									</div>
+							</td>
+							<!--
+							<td width="168px">
+								<div class="profileInfo">
+									
+								</div>
+							</td>							
+							-->
+						</tr>					
+					</table>
+				</div>
+				
+				<!--  http: //stackoverflow.com/questions/1566595/can-i-use-multiple-versions-of-jquery-on-the-same-page  -->
+				
+				
+				<div id="container-description" style="border-bottom:1px solid pink;">
+				<ul class="tabrow">
+				<?php //$EditUserProfile->EditUserClasses(); ?>
+				</ul>
+				
+				
+				<!--  stackoverflow.com/questions/28942949/css-table-how-to-position-action-buttons-left-to-each-row  -->
+				<!--  https: //jsfiddle.net/Guruprasad_Rao/2s8yqys7/1/  -->				
+					<?php 
+						// stackoverflow.com/questions/17335239/php-and-jquery-show-hide-div-if-user-logged-in-or-not									
+						//if (!isset($_SESSION['id_ofuser']) || empty($_SESSION['id_of_user'])){  ?  >
+						if ($_SESSION['id_of_user']==$_GET['id']){  ?>
+										
+								<table>
+									<tr>
+										<td>
+											<table class="table-bordered">
+						
+												<tbody>
+													<tr class="table-bordered">
+											
+															<td>Idade : <?php echo $EditUserProfile->age; ?> anos</td>															
+															<td class="table-bordered"><a href="edit_profile.php?id=<?php echo $EditUserProfile->identification;?>"><i class="fa fa-pencil fa-lg"></a></td>
+													</tr>
+													<tr class="table-bordered">
+											
+															<td>Altura : <?php echo $EditUserProfile->height; ?> m</td>        
+															<td class="table-bordered"><a href="edit_profile.php?id=<?php echo $EditUserProfile->identification;?>"><i class="fa fa-pencil fa-lg"></a></td>
+													</tr>
+												</tbody>
+											</table>
+										</td>
+										<td>
+											<table class="table-bordered">
+						
+												<tbody>
+													<tr class="table-bordered">
+											
+															<td>Massa : <?php echo $EditUserProfile->weight; ?> kg</td>
+															<td class="table-bordered"><a href="edit_profile.php?id=<?php echo $EditUserProfile->identification;?>"><i class="fa fa-pencil fa-lg"></a></td>
+													</tr>
+													<tr class="table-bordered">
+											
+															<td>descrição 4</td>
+															<td class="table-bordered"><a href="edit_profile.php?id=<?php echo $EditUserProfile->identification;?>"><i class="fa fa-pencil fa-lg"></a></td>
+													</tr>
+												</tbody>
+											</table>
+										</td>
+										<td>
+											<table class="table-bordered">
+						
+												<tbody>
+													<tr class="table-bordered">
+											
+															<td>descrição 5</td>
+															<td class="table-bordered"><a href="edit_profile.php?id=<?php echo $EditUserProfile->identification;?>"><i class="fa fa-pencil fa-lg"></a></td>
+													</tr>
+													<tr class="table-bordered">
+											
+															<td>descrição 6</td>        
+															<td class="table-bordered"><a href="edit_profile.php?id=<?php echo $EditUserProfile->identification;?>"><i class="fa fa-pencil fa-lg"></a></td>
+													</tr>
+												</tbody>
+											</table>
+										</td>
+										<td>
+											<table class="table-bordered">
+						
+												<tbody>
+													<tr class="table-bordered">
+											
+															<td>descrição 7</td>
+															<td class="table-bordered"><a href="edit_profile.php?id=<?php echo $EditUserProfile->identification;?>"><i class="fa fa-pencil fa-lg"></a></td>
+													</tr>
+													<tr class="table-bordered">
+											
+															<td>descrição 8</td>        
+															<td class="table-bordered"><a href="edit_profile.php?id=<?php echo $EditUserProfile->identification;?>"><i class="fa fa-pencil fa-lg"></a></td>
+													</tr>
+												</tbody>
+											</table>
+										</td>
+										<td>
+											<table class="table-bordered">
+						
+												<tbody>
+													<tr class="table-bordered">
+											
+															<td>Nome : <?php echo $EditUserProfile->username; ?></td>        
+															<td class="table-bordered"><a href="edit_profile.php?id=<?php echo $EditUserProfile->identification;?>"><i class="fa fa-pencil fa-lg"></a></td>
+													</tr>
+													<tr class="table-bordered">
+											
+															<td>Cel : <?php echo $EditUserProfile->phone; ?></td>        
+															<td class="table-bordered"><a href="edit_profile.php?id=<?php echo $EditUserProfile->identification;?>"><i class="fa fa-pencil fa-lg"></a></td>
+													</tr>
+												</tbody>
+											</table>
+										</td>
+									</tr>						
+								</table>
+
+						<?php }
+						else {  ?>
+
+								<table>
+									<tr>
+										<td>
+											<table class="table-bordered">
+						
+												<tbody>
+													<tr class="table-bordered">
+											
+															<td>Idade : <?php echo $UserProfile->age; ?> anos</td>
+															<td class="table-bordered"></td>
+													</tr>
+													<tr class="table-bordered">
+											
+															<td>Altura : <?php echo $UserProfile->height; ?> m</td>        
+															<td class="table-bordered"></td>
+													</tr>
+												</tbody>
+											</table>
+										</td>
+										<td>
+											<table class="table-bordered">
+						
+												<tbody>
+													<tr class="table-bordered">
+											
+															<td>Massa : <?php echo $UserProfile->weight; ?> kg</td>
+															<td class="table-bordered"></td>
+													</tr>
+													<tr class="table-bordered">
+											
+															<td>descrição 4</td>        
+															<td class="table-bordered"></td>
+													</tr>
+												</tbody>
+											</table>
+										</td>
+										<td>
+											<table class="table-bordered">
+						
+												<tbody>
+													<tr class="table-bordered">
+											
+															<td>descrição 5</td>
+															<td class="table-bordered"></td>
+													</tr>
+													<tr class="table-bordered">
+											
+															<td>descrição 6</td>        
+															<td class="table-bordered"></td>
+													</tr>
+												</tbody>
+											</table>
+										</td>
+										<td>
+											<table class="table-bordered">
+						
+												<tbody>
+													<tr class="table-bordered">
+											
+															<td>descrição 7</td>
+															<td class="table-bordered"></td>
+													</tr>
+													<tr class="table-bordered">
+											
+															<td>descrição 8</td>        
+															<td class="table-bordered"></td>
+													</tr>
+												</tbody>
+											</table>
+										</td>
+										<td>
+											<table class="table-bordered">
+						
+												<tbody>
+													<tr class="table-bordered">
+											
+															<td>descrição 9</td>
+															<td class="table-bordered"></td>
+													</tr>
+													<tr class="table-bordered">
+											
+															<td>descriÃ§Ã£o 10</td>
+															<td class="table-bordered"></td>
+													</tr>
+												</tbody>
+											</table>
+										</td>
+									</tr>						
+								</table>
+						
+						<?php 
+						}
+					?>					
+
+					<!-- 
+					<table class="table-bordered">
+						<thead>
+							<tr class="table-bordered">
+								<th class="table-bordered">#</th>
+								<th>First Name</th>              
+								<th></th>		
+							</tr>
+						</thead>
+						<tbody>
+							<tr class="table-bordered">
+								<th scope="row">1</th>
+									<td>Mark</td>
+									<td class="table-bordered"><a href="edit_profile.php?id=<?php echo $EditUserProfile->identification;?>"><i class="fa fa-pencil fa-lg"></a></td>
+							</tr>
+							<tr class="table-bordered">
+								<th scope="row">2</th>
+									<td>Jacob</td>        
+									<td class="table-bordered"><a href="edit_profile.php?id=<?php echo $EditUserProfile->identification;?>"><i class="fa fa-pencil fa-lg"></a></td>
+							</tr>
+						</tbody>
+					</table>
+					-->
+
+				</div>
+					<div id="container-content">
+						<table border="0" width="100%">
+							<tr>
+								<td width="30%">
+								<div class="feed">
+								
+										<div id="corpo">
+											<div class="caixa">
+												&nbsp Feed de notícias
+													<div class="con">
+														<div class="pd">
+															<div class="share">Publicar :</div>
+															<div class="status" >Status</div>
+															<div class="loading"></div>
+														</div>
+														<div class="img_top"></div>
+														<div class="text_status">
+															<textarea class="input_box" />So what's on your mind?</textarea>
+															<div class="button_outside_border_blue" id="share">
+																<div class="button_inside_border_blue">
+																	Compartilhar
+																</div>
+															</div>
+														<div class="clear"></div>
+														<div class="load_status_out"></div>
+														</div>
+
+													</div>
+											</div>
+										</div>										
+								</div>
+								</td>
+								<td width="70%">
+									<div class="grid-gallery">
+										
+										<div class="caixaPhoto">
+												
+													<div class="conPhoto">
+														<div class="pdPhoto">
+															<div class="sharePhoto">Galeria de Foto </div>
+															<div class="statusPhoto" ></div>
+															<div class="loadingPhoto"></div>
+														</div>
+														<div class="img_topPhoto"></div>
+														<div class="text_statusPhoto">
+															
+														<div id="two-column">
+																
+														</div>																										
+
+															<!--
+															<div class="clear"></div>
+															<div class="load_status_outPhoto"></div>
+															-->
+														</div>
+
+													</div>
+										</div>										
+										<div class="container">																					
+											<?php echo $sPhotos; ?>
+										</div>																		
+										
+
+									</div>
+								</td>
+
+								
+								
+							</tr>
+						</table>
+					</div>
+					
+				
+				<div class="container demo7">
+				
+					<ul class="grid cs-style-7">
+					<?php
+					require_once('conexao.php');
+					$photo_id = $_GET['id'];
+						$sql_modelo = "SELECT *  FROM feibook_user WHERE id='$photo_id'";
+                        $qr_modelo = mysql_query($sql_modelo) or die(mysql_error());
+                        $ln_modelo = mysql_fetch_array($qr_modelo);					
+						$foto_modelo = $ln_modelo['imagem'];
+					
+					echo '<img src="image/'.$foto_modelo.'" />';
+					?>														
+					</ul>				
+					<script src="js/toucheffects.js"></script>
+									<form>
+									<input type="file" id="profilePhotoFileUpload">
+									<input type="submit" onclick="parseFile()" value="enviar">
+									</form>
+				</div>																						
+				<div id="copyright">
+				&copy;         <div style='font-size: 0.6em;font-family: Arial;float:left;'></div>gpapp.com.br | Design by <a href="http://www.freecsstemplates.org/" rel="nofollow">FreeCSSTemplates.org</a>
+				</div> 
+			</div> <!--  fecha div id="outer" --> 		
+		
+	</div>	<!-- fecha a div id="bg" -->
+    </body>
+</html>
